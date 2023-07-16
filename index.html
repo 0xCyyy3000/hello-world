@@ -51,8 +51,7 @@
         <summary>Clone a remote repository</summary>
         <ul>
           <li>
-            <code> git clone [remote_repository_url]</code> to clone a
-            repository
+            <code> git clone [remote_repository_url]</code> clones a repository
           </li>
         </ul>
       </details>
@@ -64,7 +63,10 @@
         </summary>
         <ul>
           <li>Go to your project directory</li>
-          <li><code> git init</code> to initialize your local repository</li>
+          <li>
+            <code> git init</code> initializes an empty repository or
+            reinitializes the repository
+          </li>
         </ul>
       </details>
 
@@ -72,8 +74,8 @@
         <summary>Git status</summary>
         <ul>
           <li>
-            <code> git status</code> to view all the files which are going to be
-            staged to the commit
+            <code> git status</code> displays the state of the working directory
+            and the staging area
           </li>
         </ul>
       </details>
@@ -82,11 +84,11 @@
         <summary>Adding files</summary>
         <ul>
           <li>
-            <code> git add [file_name]</code> to add the new/modified single
-            file to the repository
+            <code> git add [file_name]</code> adds the new/modified single file
+            to the repository
           </li>
           <li>
-            <code> git add .</code> to add all the new/modified files to the
+            <code> git add .</code> adds all the new/modified files to the
             repository
           </li>
         </ul>
@@ -96,7 +98,7 @@
         <summary>Commits</summary>
         <ul>
           <li>
-            <code> git commit -m "[your_message]"</code> adding message to the
+            <code> git commit -m "[your_message]"</code> adds message to the
             working repository
           </li>
           <li>
@@ -109,13 +111,16 @@
       <details>
         <summary>Remote repository</summary>
         <ul>
-          <li><code> git remote -v</code> to see available remote</li>
           <li>
-            <code> git remote add [remote_name] [remote_url]</code> to add a
-            remote
+            <code> git remote -v</code> shows all available remote repository
           </li>
           <li>
-            <code> git remote remove [remote_name]</code> to remove a remote
+            <code> git remote add [remote_name] [remote_url]</code> adds a
+            remote repository
+          </li>
+          <li>
+            <code> git remote remove [remote_name]</code> removes a remote
+            repository from the local repository
           </li>
         </ul>
       </details>
@@ -124,7 +129,7 @@
         <summary>Branch</summary>
         <ul>
           <li>
-            <code> git branch</code> to show all available branches in the
+            <code> git branch</code> shows all available branches in the
             repository.
             <small style="color: var(--secondary)">
               (The highlighted one is the current branch)
@@ -132,15 +137,13 @@
           </li>
 
           <li>
-            <code>git branch [branch_name]</code> to create a branch with a
+            <code>git branch [branch_name]</code> creates a branch with a
             specific branch name
           </li>
 
           <li>
-            <code>git checkout [branch_name]</code> to switch to a specific
-            branch. Alternatively, you can use a single command to create a new
-            branch and switch to the new branch by
-            <small><code>git checkout -b [branch_name]</code></small>
+            <code>git branch switch [branch_name]</code> switches current branch
+            to [branch_name]
           </li>
         </ul>
       </details>
@@ -149,12 +152,12 @@
         <summary>Push & Pull</summary>
         <ul>
           <li>
-            <code> git push [remote_name] [branch_name]</code> to push the
-            commit to the remote repository
+            <code> git push [remote_name] [branch_name]</code> pushes the commit
+            to the remote repository
           </li>
 
           <li>
-            <code> git pull [remote_name] [branch_name]</code> to pull changes
+            <code> git pull [remote_name] [branch_name]</code> pulls changes
             from the remote repository
           </li>
         </ul>
