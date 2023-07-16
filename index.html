@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="pico.min.css" />
+
+    <title>Hello world!</title>
+
+    <style>
+      .container {
+        margin: 5% auto;
+        /* padding: 2rem;
+            border: solid beige 1px;
+            border-radius: 0.5rem; */
+      }
+
+      p {
+        color: var(--muted-color) !important;
+      }
+
+      summary {
+        color: var(--primary) !important;
+      }
+
+      summary small {
+        color: var(--muted-color) !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <hgroup>
+        <h2><mark> Hello world!</mark></h2>
+        <h3 class="">Web Dev with Git (version control)</h3>
+      </hgroup>
+
+      <details>
+        <summary>Create a remote repository</summary>
+        <ul>
+          <li>Login to your Github account</li>
+          <li>Select repositories</li>
+          <li>Click "New" on the right side</li>
+          <li>Enter your desired Repository name</li>
+          <li>Click "Create repository"</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>
+          Initialize local repository
+          <small>(Make sure Git is installed)</small>
+        </summary>
+        <ul>
+          <li>Go to your project directory</li>
+          <li><code> git init</code> to initialize your local repository</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>Git status</summary>
+        <ul>
+          <li>
+            <code> git status</code> to view all the files which are going to be
+            staged to the commit
+          </li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>Adding files</summary>
+        <ul>
+          <li>
+            <code> git add [file-name]</code> to add the new single file to the
+            repository
+          </li>
+          <li>
+            <code> git add .</code> to add all the new files to the repository
+          </li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>Commit staged changes</summary>
+        <ul>
+          <li>
+            <code> git commit -m "[your message]"</code> adding message to the
+            commit
+          </li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>Remote repository commands</summary>
+        <ul>
+          <li><code> git remote -v</code> to see available remote</li>
+          <li>
+            <code> git remote add [remote-name] [remote-url]</code> to add a
+            remote
+          </li>
+          <li>
+            <code> git remote remove [remote-name]</code> to remove a remote
+          </li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>Push & Pull</summary>
+        <ul>
+          <li>
+            <code> git push [remote-name] [branch-name]</code> to push the
+            commit to the remote repository
+          </li>
+
+          <li>
+            <code> git pull [remote-name] [branch-name]</code> to pull changes
+            from the remote repository
+          </li>
+        </ul>
+      </details>
+    </div>
+  </body>
+</html>
