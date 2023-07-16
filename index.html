@@ -82,7 +82,7 @@
       </details>
 
       <details>
-        <summary>Commit staged changes</summary>
+        <summary>Commits</summary>
         <ul>
           <li>
             <code> git commit -m "[your message]"</code> adding message to the
@@ -92,7 +92,7 @@
       </details>
 
       <details>
-        <summary>Remote repository commands</summary>
+        <summary>Remote repository</summary>
         <ul>
           <li><code> git remote -v</code> to see available remote</li>
           <li>
@@ -101,6 +101,31 @@
           </li>
           <li>
             <code> git remote remove [remote-name]</code> to remove a remote
+          </li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>Branch</summary>
+        <ul>
+          <li>
+            <code> git branch</code> to show all available branches in the
+            repository.
+            <small style="color: var(--secondary)">
+              (The highlighted one is the current branch)
+            </small>
+          </li>
+
+          <li>
+            <code>git branch [branch-name]</code> to create a branch with a
+            specific branch name
+          </li>
+
+          <li>
+            <code>git checkout [branch-name]</code> to switch to a specific
+            branch. Alternatively, you can use a single command to create a new
+            branch and switch to the new branch by
+            <small><code>git checkout -b [branch-name]</code></small>
           </li>
         </ul>
       </details>
